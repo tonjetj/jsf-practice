@@ -11,3 +11,99 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header{
+  width: 100%;
+}
+
+.searchbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.searchbar input {
+  width: 290px;
+  text-align: left;
+  padding: 0 5px;
+  height: 30px;
+  border-radius: 0;
+  border: 1px solid black;
+
+}
+
+.searchbar ul {
+  width: 300px;
+  margin-top: 2.2rem;
+  position: absolute;
+  padding: 0;
+}
+
+.search-results-scroll {
+  list-style-type: none;
+  max-height: 400px; 
+  overflow-y: scroll;
+}
+
+.search-result {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  border-bottom: #000 solid 1px;
+  background-color: #f2f2f2;
+  list-style-type: none;
+  position: relative;
+}
+
+.search-copy {
+  position:relative;
+  width: 100%;
+  flex-direction: row;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.search-result:hover {
+  background-color: #aaffe3;
+}
+
+.search-result p {
+  margin: 0 auto 0 20px; 
+  text-align: left;
+}
+
+.search-img {
+  margin-right: 2px;
+  min-width: 80px; 
+  max-width: 80px;
+  height: 80px;
+  object-fit: cover; 
+}
+
+.discount-badge {
+  position: absolute;
+  background-color: red;
+  padding: 0.2rem;
+  color: #fff;
+  top: 0;
+  bottom: auto;
+  right: 0;
+
+  
+}
+
+.price-container {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.discounted-price {
+  color: red;
+}
+.price.discounted {
+  text-decoration: line-through;
+}
